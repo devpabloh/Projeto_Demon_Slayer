@@ -1,0 +1,71 @@
+/* Mobile - First */
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Define duas colunas: 1 parte para o header, 3 partes para o main */
+    grid-template-rows: 100vh; /* A altura da tela inteira */
+    margin: 0;
+    height: 100vh;
+}
+
+.img_logo{
+    width: 100px;
+}
+
+header {
+    grid-column: 1 / 2; /* O header ocupa a primeira coluna */
+    grid-row: 1 / 2; /* O header ocupa a única linha */
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: .5em;
+}
+
+.container_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    
+}
+
+.container_ul li{
+    
+    padding: 1em 2em;
+    width: 100%;
+    border-radius: 1em;
+    list-style-type: none;
+    
+
+    
+}
+
+.container_ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container_ul li:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+main {
+    grid-column: 2 / 3; /* O main ocupa a segunda coluna */
+    grid-row: 1 / 2; /* O main ocupa a única linha */
+    background-color: red;
+    padding: 20px;
+    
+}
+
